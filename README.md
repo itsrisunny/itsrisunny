@@ -1,116 +1,141 @@
-<!-- Animated Header -->
-<h1 align="center">✨ Anoop Kumar Tripathi ✨</h1>
-<h3 align="center">🚀 Senior Full Stack Developer | ☁️ Cloud Architect | 💡 Tech Leader</h3>
+# 🌌 **Anoop Kumar Tripathi**
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=38B2AC&center=true&vCenter=true&width=600&lines=Full+Stack+Developer+with+8%2B+Years+Experience;React+%7C+Node+%7C+Laravel+%7C+Cloud;Building+Scalable+%26+Secure+Systems;Turning+Ideas+into+Production+Apps" />
+  <b>Senior Full Stack Developer • Cloud Architect • Tech Leader</b>
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=26&pause=1200&color=7F5AF0&center=true&vCenter=true&width=750&lines=8%2B+Years+of+Production+Experience;Full+Stack+%7C+Cloud+%7C+DevOps;React+%7C+Node+%7C+Laravel+%7C+GCP;Designing+Scalable+Enterprise+Systems" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Experience-8%2B%20Years-success?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Role-Senior%20Full%20Stack%20Developer-blueviolet?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Cloud-GCP%20%7C%20AWS%20%7C%20Azure-0A66C2?style=for-the-badge"/>
 </p>
 
 ---
 
-## 👨‍💻 About Me
-🎯 **MCA Graduate** with **8+ years of experience** in software development, cloud deployment, and enterprise web applications.  
-💼 Currently working as **Sr. Software Developer @ APISOD Technology Pvt. Ltd.**  
-☁️ Specialized in **Cloud-native applications, microservices, and DevOps pipelines**.
+## 🚀 **Who Am I**
 
-- 🔥 Full Stack Developer (Frontend + Backend)
-- ☁️ GCP | AWS | Azure Expert
-- 🧠 Strong problem-solving & leadership skills
-- 🚀 Passionate about scalable & secure architectures
+```txt
+MCA Graduate | Senior Full Stack Engineer
+Cloud-native | Microservices | DevOps
+```
+
+🎯 **8+ years** building **secure, scalable, enterprise-grade applications**
+☁️ Strong expertise in **GCP, AWS, Azure**
+🏗️ Architecting **microservices & cloud-native systems**
+🧠 Lead developer with **ownership mindset**
 
 ---
 
-## 🛠️ Tech Stack
+## 🧩 **What I Do Best**
+
+✨ Build production-ready full stack systems
+✨ Design cloud infrastructure & CI/CD pipelines
+✨ Optimize performance & scalability
+✨ Lead teams & mentor developers
+
+---
+
+## 🛠️ **Tech Arsenal**
+
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=react,nodejs,express,php,laravel,js,angular,vue,python,git,github,mysql,mongodb&theme=light" />
+  <img src="https://skillicons.dev/icons?i=react,nodejs,express,php,laravel,js,angular,vue,python,mysql,mongodb,git,github&theme=dark" />
 </p>
 
 ---
 
-## ☁️ Cloud & DevOps
+## ☁️ **Cloud • DevOps • Infrastructure**
+
 <p align="center">
-  <img src="https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white"/>
-  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=orange"/>
-  <img src="https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CI/CD-0A0A0A?style=for-the-badge&logo=githubactions"/>
+  <img src="https://img.shields.io/badge/GCP-Cloud%20Run%20%7C%20SQL%20%7C%20IAM-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white"/>
+  <img src="https://img.shields.io/badge/AWS-EC2%20%7C%20S3%20%7C%20RDS-232F3E?style=for-the-badge&logo=amazonaws"/>
+  <img src="https://img.shields.io/badge/Azure-Functions%20%7C%20CosmosDB-0078D4?style=for-the-badge&logo=microsoftazure"/>
+  <img src="https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-black?style=for-the-badge"/>
 </p>
 
 ---
 
-## 💼 Professional Experience
+## 🏢 **Professional Journey**
 
-### 🏢 **Sr. Software Developer**  
-**APISOD Technology Pvt. Ltd.** (July 2024 – Present)
-- Built scalable web applications on **Google Cloud Platform**
-- Developed a complete **HRMS system**
-- Implemented **GTM Data Layer** for real-time analytics
-- Created **secure DB-to-DB migration tools**
-- Managed **React + Node.js** full-stack architecture
+### 🟣 Sr. Software Developer — **APISOD Technology**
 
----
+📍 *July 2024 – Present*
 
-### 🏢 **Sr. Consultant – Software Development**  
-**Hashtag Labs Pvt. Ltd.** (2019 – 2024)
-- Led end-to-end SDLC for enterprise applications
-- Designed solutions using **Laravel, React & Azure**
-- Managed cloud deployments with **Azure DevOps**
-- Integrated payment systems & analytics APIs
+* Designed **cloud-native apps on GCP**
+* Built complete **HRMS platform**
+* Implemented **real-time analytics (GTM Data Layer)**
+* Developed **secure DB-to-DB migration systems**
+* Owned **frontend + backend + deployment**
 
 ---
 
-### 🏢 **Software Developer**
-**Creataum Technology Pvt. Ltd.**  
-**Webstockist Technology**
-- Built eCommerce & dynamic web apps
-- Worked with **Core PHP, Laravel, MySQL & JavaScript**
+### 🔵 Sr. Consultant — **Hashtag Labs**
+
+📍 *2019 – 2024*
+
+* Led **end-to-end SDLC**
+* Delivered enterprise solutions using **Laravel, React, Azure**
+* Managed **Azure DevOps pipelines**
+* Integrated payments, analytics & APIs
 
 ---
 
-## 🧠 Core Expertise
-✔ Cloud Architecture & Microservices  
-✔ RESTful API Development  
-✔ CI/CD Automation  
-✔ Secure & Scalable Applications  
-✔ Team Leadership & Mentorship  
+### 🟢 Software Developer — **Creataum / Webstockist**
+
+* Built **eCommerce & dynamic platforms**
+* Worked on **Core PHP, Laravel, MySQL, JS**
 
 ---
 
-## 📊 GitHub Stats
+## 🧠 **Core Strengths**
+
+✔ Cloud Architecture & Microservices
+✔ REST API & Backend Systems
+✔ CI/CD & DevOps Automation
+✔ Security & Performance Optimization
+✔ Team Leadership & Mentorship
+
+---
+
+## 📊 **GitHub Analytics**
+
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=itsrisunny&show_icons=true&theme=tokyonight&hide_border=true" />
+  <img src="https://github-readme-stats.vercel.app/api?username=itsrisunny&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" />
 </p>
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=itsrisunny&theme=tokyonight&hide_border=true" />
-</p>
-
-
----
-
-## 🚀 Top Languages
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=itsrisunny&layout=compact&theme=tokyonight&hide_border=true" />
 </p>
 
 ---
 
-## 🌐 Connect With Me
+## 🐍 **Contribution Flow**
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg" />
+</p>
+
+---
+
+## 🌐 **Let’s Connect**
+
 <p align="center">
   <a href="https://www.linkedin.com/in/itsrisunny">
     <img src="https://img.shields.io/badge/LinkedIn-Anoop%20Tripathi-0A66C2?style=for-the-badge&logo=linkedin"/>
   </a>
   <a href="mailto:anooptri16@gmail.com">
-    <img src="https://img.shields.io/badge/Email-anooptri16@gmail.com-EA4335?style=for-the-badge&logo=gmail"/>
+    <img src="https://img.shields.io/badge/Gmail-anooptri16@gmail.com-EA4335?style=for-the-badge&logo=gmail"/>
   </a>
 </p>
 
 ---
 
-## 👁️ Profile Views
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=itsrisunny&style=for-the-badge&color=blueviolet"/>
+  <img src="https://komarev.com/ghpvc/?username=itsrisunny&style=for-the-badge&color=7F5AF0"/>
 </p>
 
----
+<h3 align="center">⚡ Architecting Scalable Systems • Writing Clean Code • Leading with Impact</h3>
 
-<h2 align="center">🚀 Building Future-Ready Software | Let’s Connect!</h2>
