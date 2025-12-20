@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anoop Tripathi | Full Stack Developer & Architect</title>
+    <title>Anoop Tripathi | Full Stack Developer & Cloud Architect</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -95,7 +95,6 @@
             padding-left: 1.5rem;
         }
 
-        /* Mobile Menu Transitions */
         #mobile-menu {
             transform: translateX(100%);
             transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
@@ -113,7 +112,6 @@
             transform: rotate(90deg);
         }
 
-        /* Custom Scrollbar */
         ::-webkit-scrollbar { width: 6px; }
         ::-webkit-scrollbar-track { background: #050505; }
         ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 10px; }
@@ -126,7 +124,9 @@
     <canvas id="network-bg"></canvas>
 
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 py-6 px-6 lg:px-12 flex justify-between items-center transition-all duration-300" id="navbar">
+
+
+    <nav class="fixed top-0 w-full z-50 py-6 px-6 lg:px-12 flex justify-between items-center transition-all duration-300 glass-panel py-4" id="navbar">
         <div class="heading-font text-2xl font-extrabold tracking-tighter flex items-center gap-2 relative z-50">
             <span class="text-sky-500">//</span> ANOOP.T
         </div>
@@ -135,9 +135,8 @@
             <div class="flex gap-8">
                 <a href="#home" class="nav-link hover:text-sky-400">Overview</a>
                 <a href="#experience" class="nav-link hover:text-sky-400">Timeline</a>
-                <a href="#cloud" class="nav-link hover:text-sky-400">Cloud</a>
                 <a href="https://github.com/itsrisunny" target="_blank" class="nav-link flex items-center gap-2 hover:text-sky-400">
-                    <i data-lucide="github" class="w-3 h-3"></i> Profile
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="github" class="lucide lucide-github w-3 h-3"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg> Profile
                 </a>
             </div>
             <a href="mailto:anooptri16@gmail.com" class="bg-sky-500 text-white px-8 py-3 rounded-sm text-[10px] font-bold hover:bg-white hover:text-black transition-all uppercase tracking-widest">
@@ -148,21 +147,19 @@
         <div class="lg:hidden relative z-50">
             <button id="menu-toggle" class="text-white p-2 focus:outline-none flex items-center justify-center">
                 <div id="icon-wrapper" class="menu-btn-icon">
-                    <i data-lucide="menu" id="menu-icon"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="menu" id="menu-icon" class="lucide lucide-menu"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
                 </div>
             </button>
         </div>
     </nav>
 
-    <!-- Mobile Menu Overlay -->
+    <!-- Mobile Menu -->
     <div id="mobile-menu" class="fixed inset-0 z-40 bg-black/98 backdrop-blur-2xl flex flex-col justify-center items-center lg:hidden">
         <div class="flex flex-col gap-10 text-center">
             <a href="#home" class="mobile-nav-link text-3xl font-bold uppercase tracking-tighter hover:text-sky-400 transition-colors">Overview</a>
-            <a href="#experience" class="mobile-nav-link text-3xl font-bold uppercase tracking-tighter hover:text-sky-400 transition-colors">Timeline</a>
-            <a href="#cloud" class="mobile-nav-link text-3xl font-bold uppercase tracking-tighter hover:text-sky-400 transition-colors">Cloud</a>
-            <a href="https://github.com/itsrisunny" target="_blank" class="mobile-nav-link text-3xl font-bold uppercase tracking-tighter hover:text-sky-400 transition-colors flex items-center justify-center gap-3">
-                <i data-lucide="github" class="w-6 h-6"></i> GitHub
-            </a>
+            <a href="#skills" class="mobile-nav-link text-3xl font-bold uppercase tracking-tighter hover:text-sky-400 transition-colors">Skills</a>
+            <a href="#experience" class="mobile-nav-link text-3xl font-bold uppercase tracking-tighter hover:text-sky-400 transition-colors">History</a>
+            <a href="https://www.linkedin.com/in/itsrisunny" target="_blank" class="mobile-nav-link text-3xl font-bold uppercase tracking-tighter hover:text-sky-400 transition-colors">LinkedIn</a>
             <div class="mt-10">
                 <a href="mailto:anooptri16@gmail.com" class="bg-sky-500 text-white px-10 py-5 rounded-sm text-xs font-bold uppercase tracking-widest">
                     Email Me
@@ -176,134 +173,228 @@
         <div class="max-w-7xl">
             <div class="mb-8 flex items-center gap-4 opacity-0" id="hero-meta">
                 <span class="h-[1px] w-12 bg-sky-500"></span>
-                <span class="text-[10px] font-bold uppercase tracking-[0.5em] text-sky-400">Engineering Scalable Solutions since 2017</span>
+                <span class="text-[10px] font-bold uppercase tracking-[0.5em] text-sky-400">Full Stack & Cloud Architect | MCA Graduate</span>
             </div>
             
             <h1 class="hero-title font-extrabold mb-10 opacity-0 translate-y-10" id="hero-main">
-                Full Stack <br/>
-                <span class="text-transparent" style="-webkit-text-stroke: 1.5px #38bdf8;">Developer</span>
+                Anoop <br/>
+                <span class="text-transparent" style="-webkit-text-stroke: 1.5px #38bdf8;">Tripathi</span>
             </h1>
 
             <div class="grid lg:grid-cols-12 gap-12 items-end opacity-0" id="hero-footer">
                 <div class="lg:col-span-7">
                     <p class="text-slate-400 text-lg md:text-xl max-w-2xl mb-12 leading-relaxed">
-                        I architect high-performance <span class="text-white">Microservices</span> and <span class="text-white">Serverless</span> ecosystems. Specializing in bridging the gap between robust backends and reactive frontends.
+                        With over <span class="text-white">8+ years of experience</span>, I build scalable web applications and lead development teams through complex <span class="text-white">DevOps pipelines</span> and cloud transformations.
                     </p>
                     <div class="flex flex-wrap gap-6 items-center">
                         <a href="#experience" class="bg-white text-black px-10 py-5 text-[11px] font-black uppercase tracking-widest transition-all hover:bg-sky-500 hover:text-white">
-                            Explore Career
+                            View Career Path
                         </a>
                         <div class="flex -space-x-3">
-                            <div class="w-10 h-10 rounded-full border-2 border-black bg-sky-900 flex items-center justify-center text-[10px] font-bold">NODE</div>
-                            <div class="w-10 h-10 rounded-full border-2 border-black bg-indigo-900 flex items-center justify-center text-[10px] font-bold">PHP</div>
-                            <div class="w-10 h-10 rounded-full border-2 border-black bg-slate-800 flex items-center justify-center text-[10px] font-bold">REACT</div>
+                            <div class="w-10 h-10 rounded-full border-2 border-black bg-sky-900 flex items-center justify-center text-[10px] font-bold" title="Node.js">NODE</div>
+                            <div class="w-10 h-10 rounded-full border-2 border-black bg-orange-800 flex items-center justify-center text-[10px] font-bold" title="Laravel">LARV</div>
+                            <div class="w-10 h-10 rounded-full border-2 border-black bg-indigo-900 flex items-center justify-center text-[10px] font-bold" title="React">RCT</div>
+                            <div class="w-10 h-10 rounded-full border-2 border-black bg-slate-800 flex items-center justify-center text-[10px] font-bold" title="GCP">GCP</div>
                         </div>
-                        <span class="text-[10px] font-bold text-slate-500 tracking-widest uppercase">Multi-stack Proficiency</span>
+                        <span class="text-[10px] font-bold text-slate-500 tracking-widest uppercase">Expert Polyglot Developer</span>
                     </div>
                 </div>
                 <div class="lg:col-span-5 flex flex-col gap-6">
                     <div class="stat-card">
-                        <div class="text-3xl font-bold text-white">8.5+</div>
-                        <div class="text-[10px] text-sky-500 font-bold uppercase tracking-widest">Years Experience</div>
+                        <div class="text-3xl font-bold text-white">MCA</div>
+                        <div class="text-[10px] text-sky-500 font-bold uppercase tracking-widest">AKTU (UPTU) 2017</div>
                     </div>
                     <div class="stat-card">
-                        <div class="text-3xl font-bold text-white">40+</div>
-                        <div class="text-[10px] text-sky-500 font-bold uppercase tracking-widest">Projects Shipped</div>
+                        <div class="text-3xl font-bold text-white">8+ Yrs</div>
+                        <div class="text-[10px] text-sky-500 font-bold uppercase tracking-widest">Industry Expertise</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Cloud Infrastructure Showcase -->
-    <section id="cloud" class="py-32 px-6 lg:px-12 bg-[#080808]/50">
+    <!-- Detailed Skills Section -->
+    <section id="skills" class="pt-20 px-6 lg:px-12 bg-[#080808]/50">
         <div class="max-w-7xl mx-auto">
             <div class="mb-20">
-                <h2 class="text-4xl md:text-6xl font-extrabold tracking-tighter mb-4">Cloud Arsenal<span class="text-sky-500">_</span></h2>
-                <p class="text-slate-500 max-w-xl">Deep integration expertise across major providers, ensuring 99.9% uptime and auto-scaling capabilities.</p>
+                <h2 class="text-4xl md:text-6xl font-extrabold tracking-tighter mb-4">Technical Stack<span class="text-sky-500">_</span></h2>
+                <p class="text-slate-500 max-w-xl">Deep expertise in modern frameworks, cloud-native deployments, and secure backend architectures.</p>
             </div>
             
-            <div class="grid md:grid-cols-3 gap-1">
-                <div class="glass-panel p-10 border-sky-500/20">
-                    <i data-lucide="cloud" class="text-sky-500 w-10 h-10 mb-6"></i>
-                    <h3 class="text-xl font-bold mb-4">GCP Expert</h3>
-                    <p class="text-sm text-slate-400 mb-6">Mastery over Cloud Run, VPC Networking, and Cloud SQL for modern enterprise needs.</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="tech-tag">IAM</span><span class="tech-tag">Cloud Build</span>
-                    </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Cloud -->
+                <div class="glass-panel p-8">
+                    <h3 class="text-sky-500 font-bold text-sm mb-6 uppercase tracking-widest">Cloud Platforms</h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex justify-between"><span>GCP (Cloud Run, SQL)</span> <i data-lucide="check" class="w-4 h-4 text-sky-500"></i></li>
+                        <li class="flex justify-between"><span>AWS (EC2, S3, RDS)</span> <i data-lucide="check" class="w-4 h-4 text-sky-500"></i></li>
+                        <li class="flex justify-between"><span>Azure Functions</span> <i data-lucide="check" class="w-4 h-4 text-sky-500"></i></li>
+                        <li class="flex justify-between"><span>Firebase / Supabase</span> <i data-lucide="check" class="w-4 h-4 text-sky-500"></i></li>
+                    </ul>
                 </div>
-                <div class="glass-panel p-10 border-indigo-500/20">
-                    <i data-lucide="server" class="text-indigo-500 w-10 h-10 mb-6"></i>
-                    <h3 class="text-xl font-bold mb-4">Azure Architect</h3>
-                    <p class="text-sm text-slate-400 mb-6">Specialist in Azure Microservices, Cosmos DB, and high-throughput Serverless Functions.</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="tech-tag">DevOps</span><span class="tech-tag">Blob Storage</span>
-                    </div>
+                <!-- Backend -->
+                <div class="glass-panel p-8">
+                    <h3 class="text-sky-500 font-bold text-sm mb-6 uppercase tracking-widest">Backend & Databases</h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex justify-between"><span>Node.js / Express</span> <i data-lucide="check" class="w-4 h-4 text-sky-500"></i></li>
+                        <li class="flex justify-between"><span>PHP (Laravel, CI)</span> <i data-lucide="check" class="w-4 h-4 text-sky-500"></i></li>
+                        <li class="flex justify-between"><span>MySQL / PostgreSQL</span> <i data-lucide="check" class="w-4 h-4 text-sky-500"></i></li>
+                        <li class="flex justify-between"><span>MongoDB / CosmosDB</span> <i data-lucide="check" class="w-4 h-4 text-sky-500"></i></li>
+                    </ul>
                 </div>
-                <div class="glass-panel p-10 border-orange-500/20">
-                    <i data-lucide="layers" class="text-orange-500 w-10 h-10 mb-6"></i>
-                    <h3 class="text-xl font-bold mb-4">AWS Ops</h3>
-                    <p class="text-sm text-slate-400 mb-6">Skilled in EC2 management, S3 data lakes, and Lambda-based micro-processing.</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="tech-tag">S3</span><span class="tech-tag">RDS</span>
-                    </div>
+                <!-- Frontend -->
+                <div class="glass-panel p-8">
+                    <h3 class="text-sky-500 font-bold text-sm mb-6 uppercase tracking-widest">Frontend & Mobile</h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex justify-between"><span>React.js / Next.js</span> <i data-lucide="check" class="w-4 h-4 text-sky-500"></i></li>
+                        <li class="flex justify-between"><span>Vue.js / Angular</span> <i data-lucide="check" class="w-4 h-4 text-sky-500"></i></li>
+                        <li class="flex justify-between"><span>React Native</span> <i data-lucide="check" class="w-4 h-4 text-sky-500"></i></li>
+                        <li class="flex justify-between"><span>Tailwind CSS</span> <i data-lucide="check" class="w-4 h-4 text-sky-500"></i></li>
+                    </ul>
+                </div>
+                <!-- DevOps -->
+                <div class="glass-panel p-8">
+                    <h3 class="text-sky-500 font-bold text-sm mb-6 uppercase tracking-widest">DevOps & Tools</h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex justify-between"><span>Docker / CI-CD</span> <i data-lucide="check" class="w-4 h-4 text-sky-500"></i></li>
+                        <li class="flex justify-between"><span>Git / Azure DevOps</span> <i data-lucide="check" class="w-4 h-4 text-sky-500"></i></li>
+                        <li class="flex justify-between"><span>Payment Gateways</span> <i data-lucide="check" class="w-4 h-4 text-sky-500"></i></li>
+                        <li class="flex justify-between"><span>Cyber Security</span> <i data-lucide="check" class="w-4 h-4 text-sky-500"></i></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience -->
-    <section id="experience" class="py-32 px-6 lg:px-12">
+    <!-- Experience Timeline -->
+    <section id="experience" class="pt-20 px-6 lg:px-12">
         <div class="max-w-7xl mx-auto">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-24 gap-8">
                 <div>
-                    <h2 class="text-5xl md:text-8xl font-extrabold tracking-tighter">History<span class="text-sky-500">.</span></h2>
+                    <h2 class="text-5xl md:text-8xl font-extrabold tracking-tighter">Timeline<span class="text-sky-500">.</span></h2>
                     <p class="text-slate-500 text-xs mt-4 uppercase tracking-[0.4em]">8+ years of technical evolution</p>
                 </div>
             </div>
 
-            <div class="space-y-6">
-                <div class="experience-card glass-panel p-10 md:p-16 group relative">
-                    <div class="grid md:grid-cols-4 gap-8 items-start">
+            <div class="space-y-8">
+                <!-- APISOD -->
+                <div class="experience-card glass-panel p-10 group relative">
+                    <div class="grid md:grid-cols-4 gap-8">
                         <div class="md:col-span-1">
-                            <div class="text-sky-500 font-bold text-sm mb-2">2024 — PRESENT</div>
-                            <div class="text-slate-500 text-[10px] font-bold uppercase tracking-widest">Hyderabad</div>
+                            <div class="text-sky-500 font-bold text-sm">JULY 2024 — PRESENT</div>
+                            <div class="text-slate-500 text-[10px] mt-1 font-bold uppercase tracking-widest">Hyderabad (Remote)</div>
                         </div>
                         <div class="md:col-span-3">
-                            <h3 class="text-3xl font-bold mb-2 group-hover:text-sky-400 transition-colors">Sr. Software Developer</h3>
-                            <div class="text-lg font-medium text-slate-200 mb-6">APISOD Technology</div>
-                            <p class="text-slate-400 max-w-3xl mb-8">
-                                Spearheading end-to-end development of enterprise-grade cloud applications. Leading migration strategies to GCP and architecting microservices with Node.js and Cloud Run.
+                            <h3 class="text-2xl font-bold mb-1 group-hover:text-sky-400">Sr. Software Developer</h3>
+                            <div class="text-md text-slate-300 mb-4">APISOD Technology</div>
+                            <p class="text-slate-400 text-sm mb-6">
+                                Managing end-to-end development life cycle and leading teams to deliver high-quality products. Implementing GCP cloud strategies, microservices architecture, and DevOps pipelines to ensure scalability and 99.9% uptime.
                             </p>
-                            <div class="flex flex-wrap gap-3">
-                                <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">GCP</span>
-                                <span class="tech-tag">Microservices</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="tech-tag">GCP</span><span class="tech-tag">Node.js</span><span class="tech-tag">Microservices</span><span class="tech-tag">Team Leadership</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="experience-card glass-panel p-10 md:p-16 group relative">
-                    <div class="grid md:grid-cols-4 gap-8 items-start">
+                <!-- Freelance -->
+                <div class="experience-card glass-panel p-10 group relative">
+                    <div class="grid md:grid-cols-4 gap-8">
                         <div class="md:col-span-1">
-                            <div class="text-indigo-400 font-bold text-sm mb-2">2019 — 2024</div>
-                            <div class="text-slate-500 text-[10px] font-bold uppercase tracking-widest">Lucknow</div>
+                            <div class="text-indigo-400 font-bold text-sm">MAY 2024 — JULY 2024</div>
+                            <div class="text-slate-500 text-[10px] mt-1 font-bold uppercase tracking-widest">Varanasi</div>
                         </div>
                         <div class="md:col-span-3">
-                            <h3 class="text-3xl font-bold mb-2 group-hover:text-indigo-400 transition-colors">Senior Consultant</h3>
-                            <div class="text-lg font-medium text-slate-200 mb-6">HashTag Labs India</div>
-                            <p class="text-slate-400 max-w-3xl mb-8">
-                                Five-year tenure managing large-scale Azure implementations. Focused on Serverless architecture, Cosmos DB optimization, and secure API management for global clients.
+                            <h3 class="text-2xl font-bold mb-1 group-hover:text-indigo-400">Freelance Software Developer</h3>
+                            <p class="text-slate-400 text-sm mb-6">
+                                Provided custom software development and consulting for global clients. Focused on responsive, user-friendly full-stack solutions using MERN stack and software architecture consulting.
                             </p>
-                            <div class="flex flex-wrap gap-3">
-                                <span class="tech-tag">Azure</span>
-                                <span class="tech-tag">Angular</span>
-                                <span class="tech-tag">Vue.js</span>
-                                <span class="tech-tag">C#/.NET</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HashTag Labs -->
+                <div class="experience-card glass-panel p-10 group relative">
+                    <div class="grid md:grid-cols-4 gap-8">
+                        <div class="md:col-span-1">
+                            <div class="text-sky-500 font-bold text-sm">MAR 2019 — JUNE 2024</div>
+                            <div class="text-slate-500 text-[10px] mt-1 font-bold uppercase tracking-widest">Lucknow</div>
+                        </div>
+                        <div class="md:col-span-3">
+                            <h3 class="text-2xl font-bold mb-1 group-hover:text-sky-400">Senior Consultant (Career Progression)</h3>
+                            <div class="text-md text-slate-300 mb-4">HashTag Labs India</div>
+                            <p class="text-slate-400 text-sm mb-6">
+                                Over 5 years of progression from PHP Developer to Senior Consultant. Spearheaded Azure Microservices implementations, optimized Cosmos DB storage, and integrated complex RESTful APIs and payment systems.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="tech-tag">Azure</span><span class="tech-tag">Angular</span><span class="tech-tag">PHP/Laravel</span><span class="tech-tag">Cosmos DB</span>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <!-- Creataum -->
+                <div class="experience-card glass-panel p-10 group relative">
+                    <div class="grid md:grid-cols-4 gap-8">
+                        <div class="md:col-span-1">
+                            <div class="text-slate-400 font-bold text-sm">MAR 2018 — FEB 2019</div>
+                            <div class="text-slate-500 text-[10px] mt-1 font-bold uppercase tracking-widest">Varanasi</div>
+                        </div>
+                        <div class="md:col-span-3">
+                            <h3 class="text-2xl font-bold mb-1 group-hover:text-white">Software Developer / React Native</h3>
+                            <div class="text-md text-slate-300 mb-4">Creataum Technology Pvt. Ltd.</div>
+                            <p class="text-slate-400 text-sm mb-6">
+                                Developed and maintained e-commerce platforms using Laravel and MySQL. Pivoted into mobile development using React Native for cross-platform application delivery.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Webstockist -->
+                <div class="experience-card glass-panel p-10 group relative border-l-2 border-slate-800">
+                    <div class="grid md:grid-cols-4 gap-8">
+                        <div class="md:col-span-1">
+                            <div class="text-slate-500 font-bold text-sm">JULY 2017 — FEB 2018</div>
+                            <div class="text-slate-500 text-[10px] mt-1 font-bold uppercase tracking-widest">Allahabad</div>
+                        </div>
+                        <div class="md:col-span-3">
+                            <h3 class="text-xl font-bold mb-1">Software Developer</h3>
+                            <div class="text-md text-slate-300 mb-4">Webstockist Technology</div>
+                            <p class="text-slate-400 text-sm">
+                                Built dynamic web applications using Core PHP, MySQL, and JavaScript. Early focus on platform usability and custom client feature requests.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Location -->
+    <section class="py-20 px-6 lg:px-12 bg-zinc-950/30">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
+            <div>
+                <h3 class="text-xs font-black tracking-widest uppercase text-sky-500 mb-8">Academic Background</h3>
+                <div class="space-y-6">
+                    <div>
+                        <div class="text-xl font-bold">Master of Computer Applications (MCA)</div>
+                        <div class="text-slate-400">Dr. A.P.J. Abdul Kalam Technical University (AKTU)</div>
+                        <div class="text-xs text-slate-600 uppercase mt-1">Graduated 2017</div>
+                    </div>
+                    <div>
+                        <div class="text-lg font-bold">B.Sc. (Mathematics)</div>
+                        <div class="text-slate-400">Mahatma Gandhi Kashi Vidyapeeth, Varanasi</div>
+                        <div class="text-xs text-slate-600 uppercase mt-1">Graduated 2014</div>
+                    </div>
+                </div>
+            </div>
+            <div class="glass-panel p-10">
+                <h3 class="text-xs font-black tracking-widest uppercase text-sky-500 mb-6">Primary Location</h3>
+                <div class="flex items-start gap-4">
+                    <i data-lucide="map-pin" class="text-sky-500 shrink-0"></i>
+                    <div>
+                        <div class="text-xl font-bold">Varanasi & Lucknow</div>
+                        <p class="text-slate-400 text-sm mt-2">Available for high-impact leadership roles and architectural consulting globally via remote-first engagement.</p>
                     </div>
                 </div>
             </div>
@@ -311,27 +402,26 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-32 px-6 lg:px-12 border-t border-white/5 relative bg-[#050505]">
+    <footer class="pb-20 px-6 lg:px-12 border-t border-white/5 relative bg-[#050505]">
         <div class="max-w-7xl mx-auto">
             <div class="grid lg:grid-cols-2 gap-20 items-center">
                 <div>
-                    <h2 class="text-6xl md:text-8xl font-extrabold tracking-tighter mb-12">NEXT GEN.<br/><span class="text-sky-500">READY.</span></h2>
-                    <p class="text-slate-500 max-w-md text-sm mb-12">Currently open to senior leadership roles and architectural consulting. Based in Hyderabad/Remote.</p>
+                    <h2 class="text-6xl md:text-8xl font-extrabold tracking-tighter mb-12">LET'S BUILD<br/><span class="text-sky-500">TRUST.</span></h2>
                     <div class="flex gap-6">
                         <a href="mailto:anooptri16@gmail.com" class="bg-sky-500 text-white p-6 rounded-full hover:scale-110 transition-transform"><i data-lucide="mail"></i></a>
                         <a href="tel:+919305266444" class="bg-indigo-600 text-white p-6 rounded-full hover:scale-110 transition-transform"><i data-lucide="phone"></i></a>
-                        <a href="https://linkedin.com/in/itsrisunny" target="_blank" class="bg-blue-800 text-white p-6 rounded-full hover:scale-110 transition-transform"><i data-lucide="linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/itsrisunny" target="_blank" class="bg-blue-800 text-white p-6 rounded-full hover:scale-110 transition-transform"><i data-lucide="linkedin"></i></a>
                     </div>
                 </div>
                 <div class="glass-panel p-10 lg:p-16">
-                    <h4 class="text-xs font-black tracking-widest uppercase text-slate-500 mb-8">Quick Connect</h4>
+                    <h4 class="text-xs font-black tracking-widest uppercase text-slate-500 mb-8">Direct Access</h4>
                     <div class="space-y-8">
                         <div>
-                            <div class="text-[10px] font-bold text-sky-500 uppercase tracking-widest mb-1">Direct Line</div>
+                            <div class="text-[10px] font-bold text-sky-500 uppercase tracking-widest mb-1">Phone</div>
                             <div class="text-2xl font-bold">+91 93052 66444</div>
                         </div>
                         <div>
-                            <div class="text-[10px] font-bold text-sky-500 uppercase tracking-widest mb-1">Digital Mail</div>
+                            <div class="text-[10px] font-bold text-sky-500 uppercase tracking-widest mb-1">Email</div>
                             <div class="text-2xl font-bold truncate">anooptri16@gmail.com</div>
                         </div>
                     </div>
@@ -339,30 +429,23 @@
             </div>
             <div class="mt-32 pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between gap-6">
                 <div class="text-[10px] font-bold text-slate-600 tracking-[0.5em] uppercase">ANOOP KUMAR TRIPATHI &copy; <span id="year"></span></div>
-                <div class="text-[10px] font-bold text-slate-800 tracking-[0.2em] uppercase">Built with GSAP & Particle.js Engine</div>
+                <div class="text-[10px] font-bold text-slate-800 tracking-[0.2em] uppercase">Full Stack Developer | Cloud Ops | Architect</div>
             </div>
         </div>
     </footer>
 
     <script>
-        // Initial setup
         lucide.createIcons();
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        /**
-         * MOBILE MENU LOGIC
-         */
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
         const iconWrapper = document.getElementById('icon-wrapper');
         const mobileLinks = document.querySelectorAll('.mobile-nav-link');
 
         let isMenuOpen = false;
-
         function toggleMenu() {
             isMenuOpen = !isMenuOpen;
-            
-            // Toggle Menu Overlay
             if (isMenuOpen) {
                 mobileMenu.classList.add('active');
                 document.body.style.overflow = 'hidden';
@@ -374,53 +457,23 @@
                 iconWrapper.classList.remove('rotated');
                 iconWrapper.innerHTML = '<i data-lucide="menu"></i>';
             }
-            
-            // Force Lucide to re-render the icon inside the wrapper
             lucide.createIcons();
         }
 
-        menuToggle.addEventListener('click', (e) => {
-            e.stopPropagation();
-            toggleMenu();
-        });
+        menuToggle.addEventListener('click', (e) => { e.stopPropagation(); toggleMenu(); });
+        mobileLinks.forEach(link => link.addEventListener('click', () => isMenuOpen && toggleMenu()));
 
-        // Close menu when clicking a link
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                if(isMenuOpen) toggleMenu();
-            });
-        });
-
-        // Close menu if clicking outside content on overlay
-        mobileMenu.addEventListener('click', (e) => {
-            if (e.target === mobileMenu && isMenuOpen) toggleMenu();
-        });
-
-        /**
-         * NEURAL NETWORK PARTICLE SYSTEM
-         */
+        // Network Background
         const canvas = document.getElementById('network-bg');
         const ctx = canvas.getContext('2d');
         let particles = [];
-        
-        const settings = {
-            particleCount: 120,
-            connectionDist: 150,
-            mouseRadius: 200,
-            speed: 0.5
-        };
-
+        const settings = { particleCount: 120, connectionDist: 150, mouseRadius: 200, speed: 0.5 };
         const mouse = { x: null, y: null };
 
-        window.addEventListener('mousemove', e => {
-            mouse.x = e.x;
-            mouse.y = e.y;
-        });
+        window.addEventListener('mousemove', e => { mouse.x = e.x; mouse.y = e.y; });
 
         class Node {
-            constructor() {
-                this.init();
-            }
+            constructor() { this.init(); }
             init() {
                 this.x = Math.random() * canvas.width;
                 this.y = Math.random() * canvas.height;
@@ -429,21 +482,9 @@
                 this.size = Math.random() * 1.5 + 0.5;
             }
             update() {
-                this.x += this.vx;
-                this.y += this.vy;
-
+                this.x += this.vx; this.y += this.vy;
                 if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
                 if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
-
-                if (mouse.x) {
-                    const dx = mouse.x - this.x;
-                    const dy = mouse.y - this.y;
-                    const dist = Math.sqrt(dx*dx + dy*dy);
-                    if (dist < settings.mouseRadius) {
-                        this.x -= dx * 0.01;
-                        this.y -= dy * 0.01;
-                    }
-                }
             }
             draw() {
                 ctx.fillStyle = 'rgba(56, 189, 248, 0.4)';
@@ -467,15 +508,12 @@
                     const dx = particles[i].x - particles[j].x;
                     const dy = particles[i].y - particles[j].y;
                     const dist = Math.sqrt(dx*dx + dy*dy);
-
                     if (dist < settings.connectionDist) {
                         const opacity = 1 - (dist / settings.connectionDist);
                         ctx.strokeStyle = `rgba(56, 189, 248, ${opacity * 0.15})`;
                         ctx.lineWidth = 0.5;
-                        ctx.beginPath();
-                        ctx.moveTo(particles[i].x, particles[i].y);
-                        ctx.lineTo(particles[j].x, particles[j].y);
-                        ctx.stroke();
+                        ctx.beginPath(); ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y); ctx.stroke();
                     }
                 }
             }
@@ -483,10 +521,7 @@
 
         function loop() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-            particles.forEach(p => {
-                p.update();
-                p.draw();
-            });
+            particles.forEach(p => { p.update(); p.draw(); });
             drawLines();
             requestAnimationFrame(loop);
         }
@@ -495,9 +530,7 @@
         createNetwork();
         loop();
 
-        /**
-         * ANIMATION CONTROLS
-         */
+        // Animations
         window.addEventListener('load', () => {
             const tl = gsap.timeline({ defaults: { ease: "expo.out", duration: 1.5 }});
             tl.to("#hero-meta", { opacity: 1, x: 0 })
@@ -505,37 +538,17 @@
               .to("#hero-footer", { opacity: 1, y: 0 }, "-=1");
 
             gsap.registerPlugin(ScrollTrigger);
-            
             gsap.utils.toArray('.experience-card, .glass-panel').forEach(el => {
                 gsap.from(el, {
-                    scrollTrigger: {
-                        trigger: el,
-                        start: "top bottom-=100",
-                        toggleActions: "play none none reverse"
-                    },
-                    y: 60,
-                    opacity: 0,
-                    duration: 1,
-                    ease: "power4.out"
+                    scrollTrigger: { trigger: el, start: "top bottom-=50", toggleActions: "play none none reverse" },
+                    y: 40, opacity: 0, duration: 1, ease: "power4.out"
                 });
             });
         });
 
         const glow = document.getElementById('cursor-glow');
         window.addEventListener('mousemove', (e) => {
-            gsap.to(glow, { x: e.clientX, y: e.clientY, duration: 1.5, ease: "power3.out" });
-        });
-
-        let lastScroll = 0;
-        const nav = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            const current = window.pageYOffset;
-            if (current > 80) nav.classList.add('glass-panel', 'py-4');
-            else nav.classList.remove('glass-panel', 'py-4');
-            
-            /*if (current > lastScroll && current > 500 && !isMenuOpen) nav.style.transform = 'translateY(-100%)';
-            else nav.style.transform = 'translateY(0)';*/
-            lastScroll = current;
+            gsap.to(glow, { x: e.clientX, y: e.clientY, duration: 1.2, ease: "power3.out" });
         });
     </script>
 </body>
